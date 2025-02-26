@@ -3,30 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <h2>Contact Me</h2>
+    <meta name="author" content="Sanika Jain">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Sanika's Professional Website">
+    <title>Contact Me</title>
 </head>
-<body style="font-family: 'Arial'">
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="email">Email address:</label><br>
-        <input type="text" id="email" name="email"><br>
-        <label for="comment">Comment:</label><br>
-        <input type="text" id="comment" name="comment"><br>
-        <input type="submit" value="Submit">
-      </form>
-    <table>
-        <tr>
-            <th>Phone Number</th>
-            <th>Email Address</th>
-        </tr>
-        <tr>
-            <td>(215)791-4990</td>
-            <td>sanikaj@andrew.cmu.edu</td>
-        </tr>
-    </table>
+<body style="font-family: Arial;">
+    <header style="color:blue; background:lightblue">
+        <h1>Sanika Jain</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="views/cv.html">CV</a>
+            <a href="views/contact.html">Contact Me</a>
+            <a href="views/fun.html">For Fun</a>
+        </nav>
+    </header>
+    
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h3>My Contact Information</h3>
+        <table border="1">
+            <tr>
+                <th>Contact Method</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>sanikaj@andrew.cmu.edu</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>+1 (215) 791 4990</td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        &copy; 2025 Sanika Jain
+    </footer>
 </body>
 </html>
