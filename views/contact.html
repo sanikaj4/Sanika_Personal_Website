@@ -8,54 +8,53 @@
     <meta name="description" content="Sanika's Professional Website">
     <title>Contact Me</title>
 </head>
-<body style="font-family: Palatino;">
-    <header>
+<body style="font-family: Palatino; background-color: #f4f7fa; color: #333;">
+    <header style="color: #2a3d66; background-color: #cfe2f3; padding: 10px;">
         <h1>Sanika Jain</h1>
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact Me</a>
-            <a href="fun.html">For Fun</a>
+            <a href="../index.html" style="margin-right: 30px; color: #2a3d66; text-decoration: none;">Home</a>
+            <a href="cv.html" style="margin-right: 30px; color: #2a3d66; text-decoration: none;">CV</a>
+            <a href="contact.html" style="margin-right: 30px; color: #2a3d66; text-decoration: none;">Contact Me</a>
+            <a href="fun.html" style="color: #2a3d66; text-decoration: none;">For Fun</a>
         </nav>
     </header>
     
-    <div class="main">
-        <h2>Contact Me</h2>
-        <form>
+    <div class="main" style="margin: 20px; padding: 20px; background-color: white; border-radius: 8px;">
+        <h2 style="color: #2a3d66;">Contact Me</h2>
+        <form style="display: flex; flex-direction: column; gap: 10px; max-width: 400px;">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-
+            <input type="text" id="name" name="name" required style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+            
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
+            <input type="email" id="email" name="email" required style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+            
             <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment" required></textarea><br>
-
-            <input type="submit" value="Submit">
+            <textarea id="comment" name="comment" required style="padding: 5px; border-radius: 4px; border: 1px solid #ccc; height: 100px;"></textarea>
+            
+            <input type="submit" value="Submit" style="background-color: #2a3d66; color: white; padding: 8px; border: none; border-radius: 4px; cursor: pointer;">
         </form>
 
-        <h3>My Contact Information</h3>
-        <table border="1">
-            <tr>
-                <th>Contact Method</th>
-                <th>Details</th>
+        <h3 style="margin-top: 20px; color: #2a3d66;">My Contact Information</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+            <tr style="background-color: #cfe2f3;">
+                <th style="border: 1px solid #999; padding: 10px; text-align: left;">Contact Method</th>
+                <th style="border: 1px solid #999; padding: 10px; text-align: left;">Details</th>
             </tr>
             <tr>
-                <td>Email</td>
-                <th><a href="mailto: sanikaj@andrew.cmu.edu">sanikaj@andrew.cmu.edu</a></th>
+                <td style="border: 1px solid #999; padding: 10px;">Email</td>
+                <td style="border: 1px solid #999; padding: 10px;"><a href="mailto:sanikaj@andrew.cmu.edu" style="color: #2a3d66; text-decoration: underline;">sanikaj@andrew.cmu.edu</a></td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+                <td style="border: 1px solid #999; padding: 10px;">Phone</td>
+                <td style="border: 1px solid #999; padding: 10px; text-align: center;">+1 (215) 791 4990</td>
             </tr>
             <tr>
-                <td>Phone</td>
-                <td style="text-align: center;">+1 (215) 791 4990</td>
-            </tr>
-            <tr>
-                <td>LinkedIn</td>
-                <th><a href="https://www.linkedin.com/in/sanikajain-/">Let's connect!</a></th>
+                <td style="border: 1px solid #999; padding: 10px;">LinkedIn</td>
+                <td style="border: 1px solid #999; padding: 10px;"><a href="https://www.linkedin.com/in/sanikajain-/" style="color: #2a3d66; text-decoration: underline;">Let's connect!</a></td>
             </tr>
         </table>
     </div>
-    
-    <footer>
+    <footer style="text-align: center; padding: 10px; background-color: #cfe2f3; color: #2a3d66;">
         &copy; 2025 designed and coded by Sanika Jain
     </footer>
 </body>
