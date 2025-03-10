@@ -24,7 +24,7 @@ div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px;}
 .img {
     margin: 20px; padding: 20px; background-color: white; border-radius: 8px; display: flex; align-items: center;
 }
-nav {margin-top: 20px; margin-left: 5px}
+nav {margin-top: 20px; margin-left: 5px; text-decoration: none;}
 p {margin-top: 20px;}
 .intro {
     font-size: 18px; line-height: 1.6
