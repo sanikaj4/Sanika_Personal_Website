@@ -33,15 +33,15 @@ td {border: 1px solid #ffffff; padding-top: 12px; padding-bottom: 12px;}
 footer {margin: 20 px; text-align: center; padding: 10px; background-color: #cfe2f3; color: #2a3d66;}
 a {margin-right: 15px; color: #32446c; text-transform: none; text-decoration: none;}
 div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px;}
-.img {
+#img {
     margin: 20px; padding: 20px; background-color: white; border-radius: 8px; display: flex; align-items: center;
 }
 nav {margin-top: 20px; margin-left: 5px;}
 p {margin-top: 20px;}
-.intro {
+#intro {
     font-size: 18px; line-height: 1.6
 }
-.resume {
+#resume {
     font-weight: bold;
     font-size: 16px;
     text-align: left;
