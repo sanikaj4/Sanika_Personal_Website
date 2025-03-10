@@ -1,4 +1,14 @@
-* {font-family: Arial; padding: 5px; margin: 5px}
+.roboto-<uniquifier> {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <100>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+* {font-family: Roboto; padding: 5px; margin: 5px}
+
 body {background-color: #f4f7fa; color: #333;}
 h1 {color: #2a3d66; background-color: #cfe2f3; padding: 10px; margin: 20 px;}
 h2 {color: #2a3d66;}
