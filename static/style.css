@@ -9,7 +9,7 @@
 
 * {font-family: Roboto; padding: 5px; margin: 5px}
 
-body {background-color: #f4f7fa; color: #333;}
+body {background-color: #f4f7fa; color: #333; text-decoration: none;}
 h1 {background-color: #cfe2f3; padding: 10px; margin: 20 px;}
 #webname {color: #2a3d66;}
 h2 {color: #2a3d66;}
