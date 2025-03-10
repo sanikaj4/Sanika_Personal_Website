@@ -6,8 +6,12 @@
     font-variation-settings:
       "wdth" 100;
   }
-
-* {font-family: Roboto; padding: 5px; margin: 5px}
+* {
+    font-family: Roboto; padding: 5px; margin: 5px
+}
+form * {
+    display: block; margin: auto; text-align: center;
+}
 
 body {background-color: #f4f7fa; color: #333;}
 h1 {background-color: #cfe2f3; padding: 10px; margin: 20 px;}
