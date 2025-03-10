@@ -1,6 +1,6 @@
 * {font-family: Palatino;}
 body {background-color: #f4f7fa; color: #333;}
-h1 {color: #2a3d66; background-color: #cfe2f3; padding: 10px;}
+h1 {margin: 20px; color: #2a3d66; background-color: #cfe2f3}
 h2 {color: #2a3d66;}
 table {width: 100%; border-collapse: collapse; margin-top: 10px;}
 ul {list-style-type: square; padding-left: 20px;}
