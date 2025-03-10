@@ -13,7 +13,7 @@ div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px;}
 nav {margin: 20px}
 p {margin-top: 20px;}
 .intro {
-    padding: 50px
+    margin: 50px
     font-size: 18px;
     line-height: 1.6;
     font-weight: normal;
