@@ -1,5 +1,5 @@
-* {padding: 10px}
-body {font-family: Palatino; background-color: #f4f7fa; color: #333;}
+* {font-family: Palatino;}
+body {background-color: #f4f7fa; color: #333;}
 h1 {color: #2a3d66; background-color: #cfe2f3; padding: 10px;}
 h2 {color: #2a3d66;}
 table {width: 100%; border-collapse: collapse; margin-top: 10px;}
@@ -13,5 +13,5 @@ div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px;}
 p {margin-top: 20px;}
 img {border-radius: 50%; margin-right: 20px;}
 form {display: flex; flex-direction: column; gap: 10px; max-width: 400px;}
-input {padding: 5px; border-radius: 4px; border: 1px solid #ccc; font-family: Palatino; padding: 8px;}
-textarea {padding: 5px; border-radius: 4px; border: 1px solid #ccc; height: 100px; font-family: Palatino; padding: 8px;}
+input {padding: 5px; border-radius: 4px; border: 1px solid #ccc; padding: 8px;}
+textarea {padding: 5px; border-radius: 4px; border: 1px solid #ccc; height: 100px; padding: 8px;}
