@@ -19,7 +19,7 @@ tr {background-color: #cfe2f3;}
 th {background-color: #cfe2f3; border: 1px solid #999; padding: 10px; text-align: left;}
 td {background-color: #ffffff; border: 1px solid #999; padding: 10px;}
 footer {margin: 20 px; text-align: center; padding: 10px; background-color: #cfe2f3; color: #2a3d66;}
-a {margin-right: 30px; color: #2a3d66; text-transform: none; text-decoration: none;}
+a {margin-right: 15px; color: #32446c; text-transform: none; text-decoration: none;}
 div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px;}
 .img {
     margin: 20px; padding: 20px; background-color: white; border-radius: 8px; display: flex; align-items: center;
