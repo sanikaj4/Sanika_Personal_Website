@@ -9,7 +9,10 @@ th {background-color: #cfe2f3; border: 1px solid #999; padding: 10px; text-align
 td {background-color: #ffffff; border: 1px solid #999; padding: 10px;}
 footer {margin: 20 px; text-align: center; padding: 10px; background-color: #cfe2f3; color: #2a3d66;}
 a {margin-right: 30px; color: #2a3d66;}
-div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px; display: flex;}
+div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px;}
+.img {
+    display: flex;
+}
 nav {margin: 20px}
 p {margin-top: 20px;}
 .intro {
