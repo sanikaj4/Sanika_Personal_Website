@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sanika Jain">
@@ -9,39 +13,47 @@
     <title>Curriculum Vitae</title>
 
 </head>
-<body style="font-family: Palatino; background-color: #f4f7fa; color: #333;">
-    <header style="color: #2a3d66; background-color: #cfe2f3; padding: 10px;">
-        <h1>Sanika Jain</h1>
+<body>
+    <header>
+        <h1 id="webname">Sanika Jain</h1>
         <nav>
-            <a href="../index.html" style="margin-right: 30px; color: #2a3d66;">Home</a>
-            <a href="cv.html" style="margin-right: 30px; color: #2a3d66;">CV</a>
-            <a href="contact.html" style="margin-right: 30px; color: #2a3d66;">Contact Me</a>
-            <a href="fun.html" style="color: #2a3d66;">For Fun</a>
+            <a href="../index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="fun.html">For Fun</a>
         </nav>
     </header>
-    <div class="main" style="margin: 20px; padding: 20px; background-color: white; border-radius: 8px;">
-        <h2 style="color: #2a3d66;">Curriculum Vitae</h2>
-        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-            <tr style="background-color: #cfe2f3;">
-                <th style="border: 1px solid #999; padding: 10px; text-align: left;">Title</th>
-                <th style="border: 1px solid #999; padding: 10px; text-align: left;">Description</th>
+    <div class="main">
+        <h2>Curriculum Vitae</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
             </tr>
             <tr>
-                <td style="border: 1px solid #999; padding: 10px;">Undergraduate Student @Carnegie Mellon University (Pittsburgh, PA)</td>
-                <td style="border: 1px solid #999; padding: 10px;">Majors: Information Systems + Business Administration, Concentrations: Health Information Systems + AI/Product Management</td>
-            </tr>
-            <tr style="background-color: #f9f9f9;">
-                <td style="border: 1px solid #999; padding: 10px;">SAM Data Science Intern @eClinical Works (Remote)</td>
-                <td style="border: 1px solid #999; padding: 10px;">Conduct data analyses with Excel and R to determine trends within various accounts.</td>
+                <td>Undergraduate Student @Carnegie Mellon University (Pittsburgh, PA)</td>
+                <td>Majors: Information Systems + Business Administration, Concentrations: Health Information Systems + AI/Product Management</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #999; padding: 10px;">Sales/Marketing Consultant @KVK Tech (Newtown, PA)</td>
-                <td style="border: 1px solid #999; padding: 10px;">Conduct data analyses with Excel on various advertising campaigns.</td>
+                <td>SAM Data Science Intern @eClinical Works (Remote)</td>
+                <td>Conduct data analyses with Excel and R to determine trends within and across various accounts.</td>
+            </tr>
+            <tr>
+                <td>Sales/Marketing Consultant @KVK Tech (Newtown, PA)</td>
+                <td>Conduct data analyses with Excel on various advertising campaigns.</td>
+            </tr>
+            <tr>
+                <td>Founder/President @CRN Medical Professions Club (Newtown, PA)</td>
+                <td>Started and grew club to over 50 members, inviting medical professionals to share educational and professional experiences.</td>
+            </tr>
+            <tr>
+                <td>Captain @CRN Speech and Debate (Newtown, PA)</td>
+                <td>Competed in Congressional Debate and Duo Interpretation, earning bids to prestigious national competitions in both.</td>
             </tr>
         </table>
-        <p style="margin-top: 20px;"><a href="../static/Sanika Jain - Resume.pdf" target="_blank" style="color: #2a3d66;">My Resume (pdf)</a></p>
+        <p id="resume"><a href="../static/Sanika Jain - Resume.pdf" target="_blank">My Resume (pdf)</a></p>
     </div>
-    <footer style="text-align: center; padding: 10px; background-color: #cfe2f3; color: #2a3d66;">
+    <footer>
         &copy; 2025 - designed and coded by Sanika Jain :)
     </footer>
 </body>
