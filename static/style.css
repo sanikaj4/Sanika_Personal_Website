@@ -16,7 +16,7 @@ form * {
 body {background-color: #f4f7fa; color: #333;}
 h1 {background-color: #cfe2f3; padding: 10px; margin: 20 px; border-radius: 8px}
 #webname {color: #2a3d66;}
-h2 {color: #2a3d66;}
+h2 {padding: 10px; margin: 20 px; color: #2a3d66;}
 table {width: 100%; margin-top: 10px;}
 #contact {
     display: block;
