@@ -36,11 +36,13 @@ function validateForm(event) {
     var successMessage = document.getElementById("successMessage");
 
     if (name === "" || email === "" || message === "") {
-        validationMessage.style.display = "block";
-        successMessage.style.display = "none";
+        validationMessage.classList.remove("hidden");
+        successMessage.classList.add("hidden");
     } else {
-        validationMessage.style.display = "none";
-        successMessage.style.display = "block";
+        validationMessage.classList.add("hidden");
+        successMessage.classList.remove("hidden");
+
         document.getElementById("contactForm").reset();
     }
+}
 }
