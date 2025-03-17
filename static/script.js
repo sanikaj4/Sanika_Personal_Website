@@ -25,20 +25,22 @@ $(document).ready(function() {
     });
 });
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+function validateForm(event) {
     event.preventDefault();
-    
-    var name = document.getElementById("name");
-    var email = document.getElementById("email");
-    var message = document.getElementById("message");
+
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
 
     var validationMessage = document.getElementById("validationMessage");
     var successMessage = document.getElementById("successMessage");
 
-    if (!name.checkValidity() || !email.checkValidity() || !message.checkValidity()) {
+    if (name === "" || email === "" || message === "") {
         validationMessage.style.display = "block";
+        successMessage.style.display = "none";
     } else {
         validationMessage.style.display = "none";
         successMessage.style.display = "block";
+        document.getElementById("contactForm").reset();
     }
-});
+}
