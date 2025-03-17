@@ -37,7 +37,7 @@ div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px;}
     margin: 20px; padding: 20px; background-color: white; border-radius: 8px; display: flex; align-items: center;
 }
 nav {margin-top: 20px; margin-left: 5px;}
-p {margin-top: 20px;}
+p {margin: 20px;}
 #bioSection {
     font-size: 18px; line-height: 1.6
 }
