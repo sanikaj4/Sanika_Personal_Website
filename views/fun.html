@@ -13,7 +13,7 @@
     <meta name="description" content="Sanika's Professional Website">
     <title>For Fun</title>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Sanika Jain</h1>
         <nav>
@@ -25,8 +25,9 @@
     </header>
     <div class="main">
         <div>
-            <button id="showButton" onclick="showList()"><h2>Things I do for fun</h2>></button>
-            <ul>
+            <h2>Things I do for fun</h2>>
+            <button id="showButton" onclick="showList()">Click to see...</button>
+            <ul id="hiddenList">
                 <li>Singing</li>
                 <li>Playing badminton</li>
                 <li>Traveling</li>
