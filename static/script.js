@@ -25,17 +25,37 @@ $(document).ready(function() {
     });
 });
 
-function validateForm() {
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const message = document.getElementById("message");
-    const demo = document.getElementById("demo");
+function validateForm(event) {
+    event.preventDefault();
 
-    if (!name.checkValidity() || !email.checkValidity() || !message.checkValidity()) {
-        demo.innerHTML = "Please fill out the form correctly so I can get back to you :)";
-        demo.style.color = "red";
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    var validationMessage = document.getElementById("validationMessage");
+    var successMessage = document.getElementById("successMessage");
+
+    if (name === "" || email === "" || message === "") {
+        validationMessage.style.display = "block";
+        successMessage.style.display = "none";
     } else {
-        demo.innerHTML = "Form submitted successfully!";
-        demo.style.color = "green";
+        validationMessage.style.display = "none";
+        successMessage.style.display = "block";
+        document.getElementById("contactForm").reset();
+    }
+}
+
+function validateForm() {
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var comment = document.getElementById("comment");
+    var message = document.getElementById("message");
+
+    if (!name.checkValidity() || !email.checkValidity() || !comment.checkValidity()) {
+        message.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+        message.style.color = "red";
+    } else {
+        message.innerHTML = "Form submitted successfully!";
+        message.style.color = "green";
     }
 }
