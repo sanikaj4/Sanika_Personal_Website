@@ -32,18 +32,10 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     var email = document.getElementById("email");
     var message = document.getElementById("message");
 
-    if (!name.value || !email.value || !message.value) {
+    if (!name.checkValidity() || !email.checkValidity() || !message.checkValidity()) {
         document.getElementById("validationMessage").style.display = "block";
     } else {
         document.getElementById("validationMessage").style.display = "none";
         alert("Form submitted successfully!");
         }
-
-    checkField("name", "nameError", "Please enter your name.");
-    checkField("email", "emailError", "Please enter a valid email.");
-    checkField("message", "messageError", "Please enter a message.");
-
-    if (!valid) {
-        event.preventDefault();
-    }
 });
