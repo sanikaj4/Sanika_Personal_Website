@@ -59,5 +59,9 @@ function validateForm() {
     } else {
         message.innerHTML = "Form submitted successfully!";
         message.style.color = "green";
+        setTimeout(() => {
+            form.reset();  // Clears the form after success
+            message.innerHTML = ""; // Removes success message after reset
+        }, 2000);
     }
 }
