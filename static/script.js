@@ -25,24 +25,17 @@ $(document).ready(function() {
     });
 });
 
-function validateForm(event) {
-    event.preventDefault();
+function validateForm() {
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+    const demo = document.getElementById("demo");
 
-    var name = document.getElementById("name").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var message = document.getElementById("message").value.trim();
-
-    var validationMessage = document.getElementById("validationMessage");
-    var successMessage = document.getElementById("successMessage");
-
-    if (name === "" || email === "" || message === "") {
-        validationMessage.classList.remove("hidden");
-        successMessage.classList.add("hidden");
+    if (!name.checkValidity() || !email.checkValidity() || !message.checkValidity()) {
+        demo.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+        demo.style.color = "red";
     } else {
-        validationMessage.classList.add("hidden");
-        successMessage.classList.remove("hidden");
-
-        document.getElementById("contactForm").reset();
+        demo.innerHTML = "Form submitted successfully!";
+        demo.style.color = "green";
     }
-}
 }
