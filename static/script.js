@@ -27,15 +27,18 @@ $(document).ready(function() {
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
-
+    
     var name = document.getElementById("name");
     var email = document.getElementById("email");
     var message = document.getElementById("message");
 
+    var validationMessage = document.getElementById("validationMessage");
+    var successMessage = document.getElementById("successMessage");
+
     if (!name.checkValidity() || !email.checkValidity() || !message.checkValidity()) {
-        document.getElementById("validationMessage").style.display = "block";
+        validationMessage.style.display = "block";
     } else {
-        document.getElementById("validationMessage").style.display = "none";
-        alert("Form submitted successfully!");
-        }
+        validationMessage.style.display = "none";
+        successMessage.style.display = "block";
+    }
 });

@@ -70,3 +70,9 @@ textarea {padding: 5px; border-radius: 4px; border: 1px solid #ccc; height: 100p
     margin-top: 10px;
     font-weight: bold;
 }
+#successMessage {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
