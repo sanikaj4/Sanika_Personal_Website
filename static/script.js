@@ -26,18 +26,18 @@ $(document).ready(function() {
 });
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    let valid = true;
+    event.preventDefault();
 
-    function checkField(id, errorId, message) {
-        let field = document.getElementById(id);
-        let error = document.getElementById(errorId);
-        if (!field.checkValidity()) {
-            error.textContent = message;
-            valid = false;
-        } else {
-            error.textContent = "";
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var message = document.getElementById("message");
+
+    if (!name.value || !email.value || !message.value) {
+        document.getElementById("validationMessage").style.display = "block";
+    } else {
+        document.getElementById("validationMessage").style.display = "none";
+        alert("Form submitted successfully!");
         }
-    }
 
     checkField("name", "nameError", "Please enter your name.");
     checkField("email", "emailError", "Please enter a valid email.");

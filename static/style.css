@@ -64,3 +64,9 @@ textarea {padding: 5px; border-radius: 4px; border: 1px solid #ccc; height: 100p
     color: red;
     font-size: 14px;
 }
+#validationMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
