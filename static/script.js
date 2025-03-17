@@ -59,9 +59,10 @@ function validateForm() {
     } else {
         message.innerHTML = "Form submitted successfully!";
         message.style.color = "green";
+        // ChatGPT helped with resetting the form
         setTimeout(() => {
-            form.reset();  // Clears the form after success
-            message.innerHTML = ""; // Removes success message after reset
+            form.reset();
+            message.innerHTML = "";
         }, 500);
     }
 }
