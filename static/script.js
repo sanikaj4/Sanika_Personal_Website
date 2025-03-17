@@ -46,12 +46,14 @@ function validateForm(event) {
 }
 
 function validateForm() {
-    var name = document.getElementById("name");
-    var email = document.getElementById("email");
-    var comment = document.getElementById("comment");
-    var message = document.getElementById("message");
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const comment = document.getElementById("comment");
+    const message = document.getElementById("message");
+    const form = document.getElementById("contactForm");
 
-    if (!name.checkValidity() || !email.checkValidity() || !comment.checkValidity()) {
+    if (!form.checkValidity()) {
+        form.reportValidity();
         message.innerHTML = "Please fill out the form correctly so I can get back to you :)";
         message.style.color = "red";
     } else {
