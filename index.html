@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="./static/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
     <title>Sanika Jain</title>
 
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Sanika Jain</h1>
         <nav>
@@ -27,10 +28,16 @@
     </header>
     <div id="img">
         <img src="static/headshot.JPG" alt="image of Sanika Jain" width="200" height="200">
-        <p id="intro">Welcome! I’m Sanika, an IS student at Carnegie Mellon University. With a passion for data analytics, project management, and healthcare, I'm excited to explore opportunities at the intersection of technology, business, and innovation. I’m always eager to learn and create meaningful impact. Feel free to explore my work, and let’s connect!</p>
+    </div>
+    <div id="bioSection">
+        <p id="shortBio">Welcome! I’m Sanika, an IS student at Carnegie Mellon University.</p>
+        <p id="longBio" style="display: none;">With a passion for data analytics, project management, and healthcare, I'm excited to explore opportunities at the intersection of technology, business, and innovation. I’m always eager to learn and create meaningful impact. Feel free to explore my work, and let’s connect!</p>
+        <button id="readMore">Read More</button>
+        <button id="readLess" style="display: none;">Read Less</button>
     </div>
     <footer>
-        &copy; 2025 - designed and coded by Sanika Jain :)
+        &copy; designed and coded by Sanika Jain :)
+        <p>&copy; <span id="copyYear"></span> Sanika's Personal Website. All rights reserved.</p>
     </footer>
 </body>
 </html>

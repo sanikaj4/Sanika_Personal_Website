@@ -28,14 +28,17 @@
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            <span id="nameError" class="error"></span>
             
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
             
             <label for="comment">Comment:</label>
             <textarea id="comment" name="comment" required></textarea>
+            <span id="messageError" class="error"></span>
             
-            <input id="submit" type="submit" value="Submit">
+            <button type="submit">Submit</button>
         </form>
 
         <h2> </h2>
@@ -61,7 +64,8 @@
         </table>
     </div>
     <footer>
-        &copy; 2025 - designed and coded by Sanika Jain :)
+        &copy; designed and coded by Sanika Jain :)
+        <p>&copy; <span id="copyYear"></span> Sanika's Personal Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
