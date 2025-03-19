@@ -125,6 +125,10 @@ button {
 .item1, .item2, .item3, .item4 {
     flex: 0 1 auto;
     text-align: center;
+}
+
+.table-container {
+    display: flex;
     justify-content: center;
     margin: 20px;
 }
