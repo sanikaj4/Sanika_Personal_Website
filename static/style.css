@@ -95,3 +95,16 @@ button {
     color: white;
     cursor: pointer;
 }
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item1, .item2, .item3, .item4 {
+    flex: 1;
+    text-align: center;
+}
