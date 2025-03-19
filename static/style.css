@@ -1,51 +1,75 @@
-.roboto-<uniquifier> {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <100>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+/* ----------------------------- */
+/* Global Styles */
+/* ----------------------------- */
+
 * {
-    font-family: Roboto; padding: 5px; margin: 5px
-}
-form * {
-    display: block; margin: auto; text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 5px;
+    margin: 5px;
 }
 
-body {background-color: #f4f7fa; color: #333;}
-h1 {background-color: #cfe2f3; padding: 10px; margin: 20 px; border-radius: 8px}
-#webname {color: #2a3d66;}
-h2 {padding: 10px; margin: 20 px; color: #2a3d66;}
-table {width: 100%; margin-top: 10px;}
-#contact {
-    display: block;
+body {
+    background-color: #f4f7fa;
+    color: #333;
 }
-ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+
+/* ----------------------------- */
+/* Typography */
+/* ----------------------------- */
+
+h1, h2 {
+    padding: 10px;
+    margin: 20px;
+    color: #2a3d66;
+    border-radius: 8px;
 }
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+
+h1 {
+    background-color: #cfe2f3;
 }
-tr:nth-child(odd) {
-    background-color: #ffffff;
+
+#webname {
+    color: #2a3d66;
 }
-th {background-color: #cfe2f3; color: #2a3d66; border: 1px solid #ffffff; padding-top: 12px; padding-bottom: 12px; text-align: left; width: fit-content}
-td {border: 1px solid #ffffff; padding-top: 12px; padding-bottom: 12px;}
-footer {margin: 20 px; text-align: center; padding: 10px; background-color: #cfe2f3; color: #2a3d66; border-radius: 8px}
-a {margin-right: 15px; color: #32446c; text-transform: none; text-decoration: none;}
-div {margin: 20px; padding: 20px; background-color: white; border-radius: 8px;}
-#img {
-    margin: 20px; padding: 20px; background-color: white; border-radius: 8px; display: flex; align-items: center;
+
+p {
+    margin: 20px;
 }
-nav {margin-top: 20px; margin-left: 5px;}
-p {margin: 20px;}
+
 #bioSection {
-    font-size: 18px; line-height: 1.6
+    font-size: 18px;
+    line-height: 1.6;
 }
+
+#resume {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* ----------------------------- */
+/* Links & Buttons */
+/* ----------------------------- */
+
+a {
+    margin-right: 15px;
+    color: #32446c;
+    text-decoration: none;
+}
+
+button, #showButton {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(8, 8, 64);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ----------------------------- */
+/* Layout & Containers */
+/* ----------------------------- */
+
 .container {
     display: flex;
     justify-content: center;
@@ -55,63 +79,6 @@ p {margin: 20px;}
     padding: 20px;
     width: fit-content;
     margin: auto;
-}
-#resume {
-    font-weight: bold;
-    font-size: 16px;
-    text-align: left;
-}
-img {border-radius: 50%; margin-right: 20px;}
-.funIMG {
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin: auto;
-}
-input {padding: 5px; border-radius: 4px; border: 1px solid #ccc; padding: 8px;}
-#submit {
-   background-color: #2a3d66; color: white; border-radius: 10px;
-}
-textarea {padding: 5px; border-radius: 4px; border: 1px solid #ccc; height: 100px; padding: 8px;}
-/* #hiddenList {
-    display: none;
-} */
-#showButton {
-    padding: 10px 15px;
-    font-size: 16px;
-}
-.hidden {
-    display: none;
-}
-
-.error {
-    color: red;
-    font-weight: bold;
-}
-
-.success {
-    color: green;
-    font-weight: bold;
-}
-.container {
-    display: inline-block;
-    border-radius: 10%;
-    box-shadow: 2px 2px 10px gray;
-    padding: 20px;
-}
-
-button {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(8, 8, 64);
-    color: white;
-    cursor: pointer;
 }
 
 .mainLayout {
@@ -125,12 +92,6 @@ button {
 .item1, .item2, .item3, .item4 {
     flex: 0 1 auto;
     text-align: center;
-}
-
-.table-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
 }
 
 .contact-container {
@@ -164,12 +125,150 @@ button {
     justify-content: space-between;
 }
 
-#findMe h2, #contactForm h2 {
-    margin-top: 0;
+/* ----------------------------- */
+/* Forms */
+/* ----------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+input, textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+#submit {
+   background-color: #2a3d66;
+   color: white;
+   border-radius: 10px;
 }
 
 #contactForm form input,
 #contactForm form textarea,
 #contactForm form button {
     width: 100%;
+}
+
+/* ----------------------------- */
+/* Tables */
+/* ----------------------------- */
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+th {
+    background-color: #cfe2f3;
+    color: #2a3d66;
+    text-align: left;
+    width: fit-content;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* ----------------------------- */
+/* Images */
+/* ----------------------------- */
+
+img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.funIMG {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+#img {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------------------- */
+/* Lists & Navigation */
+/* ----------------------------- */
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+nav {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+/* ----------------------------- */
+/* Footer */
+/* ----------------------------- */
+
+footer {
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #cfe2f3;
+    color: #2a3d66;
+    border-radius: 8px;
+}
+
+/* ----------------------------- */
+/* Utility Classes */
+/* ----------------------------- */
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
 }
