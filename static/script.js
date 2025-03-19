@@ -77,17 +77,3 @@ function getAdvice() {
             document.getElementById("adviceText").innerText = "Error fetching advice.";
         });
 }
-
-const weatherApiUrl = 'https://api.weather.gov/points/40.444,-79.942/forecast';
-          
-fetch(weatherApiUrl)
-    .then(response => response.json())
-    .then(data => {
-    const forecast = data.properties.periods[0];
-    const temperature = forecast.temperature;
-    const temperatureUnit = forecast.temperatureUnit;
-    const shortForecast = forecast.shortForecast;
-
-    document.getElementById('weather').innerHTML = `Current Weather: ${shortForecast}, ${temperature}°${temperatureUnit}`;
-    })
-    .catch(error => console.error('Error fetching weather data:', error));
