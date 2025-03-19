@@ -24,15 +24,27 @@
         </nav>
     </header>
     <div class="main">
-        <div>
-            <h2>Things I do for fun</h2>
-            <button id="showButton" onclick="showList()">Click to see...</button>
-            <ul id="hiddenList">
-                <li>Singing</li>
-                <li>Playing badminton</li>
-                <li>Traveling</li>
-                <li>Calligraphy</li>
-            </ul>
+        <div class="mainLayout">
+            <div class="item1">
+                <h2>My Fun Activities</h2>
+                <ul>
+                    <li>Activity 1</li>
+                    <li>Activity 2</li>
+                    <li>Activity 3</li>
+                </ul>
+            </div>
+            <div class="item2">
+                <img src="../static/images/badminton.jpg" class="funIMG" alt="Badminton Image">
+            </div>
+            <div class="item3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hLQl3WQQoQ0?si=pcfysWZCBKxvtzXg" 
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="item4 container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
         </div>
     </div>
     <footer>

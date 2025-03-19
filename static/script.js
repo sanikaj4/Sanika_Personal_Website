@@ -5,10 +5,10 @@ function addYear() {
     }
 }
 
-function showList() {
+/* function showList() {
     document.getElementById("hiddenList").style.display = "block";
     document.getElementById("showButton").style.display = "none";
-}
+} */
 
 $(document).ready(function() {
     $("#readMore").click(function() {
@@ -65,4 +65,8 @@ function validateForm() {
             message.innerHTML = "";
         }, 500);
     }
+}
+
+function getAdvice() {
+    fetch(https://api.adviceslip.com/advice)
 }

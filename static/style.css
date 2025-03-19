@@ -41,21 +41,29 @@ p {margin: 20px;}
 #bioSection {
     font-size: 18px; line-height: 1.6
 }
+.container {
+    border-radius: 100%; display: inline-block;border-radius: 10%; box-shadow: 12, 14;
+}
 #resume {
     font-weight: bold;
     font-size: 16px;
     text-align: left;
 }
 img {border-radius: 50%; margin-right: 20px;}
+.funIMG {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
 form {display: flex; flex-direction: column; gap: 10px; max-width: 400px;}
 input {padding: 5px; border-radius: 4px; border: 1px solid #ccc; padding: 8px;}
 #submit {
    background-color: #2a3d66; color: white; border-radius: 10px;
 }
 textarea {padding: 5px; border-radius: 4px; border: 1px solid #ccc; height: 100px; padding: 8px;}
-#hiddenList {
+/* #hiddenList {
     display: none;
-}
+} */
 #showButton {
     padding: 10px 15px;
     font-size: 16px;
