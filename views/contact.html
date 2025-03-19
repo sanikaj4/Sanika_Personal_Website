@@ -23,33 +23,35 @@
             <a href="fun.html">For Fun</a>
         </nav>
     </header>
-    <div class="item1">
-        <h2>Find Me</h2>
-        <iframe
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            loading="lazy" 
-            allowfullscreen 
-            referrerpolicy="no-referrer-when-downgrade" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.590450096003!2d-79.94414592398775!3d40.44208097143542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie%20Mellon%20University!5e1!3m2!1sen!2sus!4v1742423476667!5m2!1sen!2sus">
-        </iframe>
-    </div>
-    <div class="item2">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input id="name" type="text" required>
-        
-            <label for="email">Email:</label>
-            <input id="email" type="email" required>
-        
-            <label for="comment">Message:</label>
-            <textarea id="comment" required></textarea>
-        
-            <button type="button" onclick="validateForm()">Submit</button>
-        </form>  
-        <p id="message"></p>
+    <div class="contact-container">
+        <div class="item1">
+            <h2>Find Me</h2>
+            <iframe
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                loading="lazy" 
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.590450096003!2d-79.94414592398775!3d40.44208097143542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie%20Mellon%20University!5e1!3m2!1sen!2sus!4v1742423476667!5m2!1sen!2sus">
+            </iframe>
+        </div>
+        <div class="item2">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input id="name" type="text" required>
+            
+                <label for="email">Email:</label>
+                <input id="email" type="email" required>
+            
+                <label for="comment">Message:</label>
+                <textarea id="comment" required></textarea>
+            
+                <button type="button" onclick="validateForm()">Submit</button>
+            </form>  
+            <p id="message"></p>
+        </div>
     </div>  
     <div class="table-container">
         <h2>My Contact Information</h2>
