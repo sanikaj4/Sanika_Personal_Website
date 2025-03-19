@@ -152,6 +152,11 @@ button {
     flex-direction: column;
     min-height: 100%;
 }
+
+#contactForm {
+    background-color: gray;
+}
+
 #contactForm form {
     flex-grow: 1;
     display: flex;
