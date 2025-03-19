@@ -96,7 +96,7 @@ button, #showButton {
 
 .contact-container {
     display: flex;
-    align-items: stretch; /* Make both sections the same height */
+    align-items: stretch; 
     justify-content: space-between;
     gap: 20px;
     margin: 20px auto;
@@ -104,7 +104,7 @@ button, #showButton {
 }
 
 #findMe, #contactForm {
-    flex: 1; /* Make both sections take equal space */
+    flex: 1;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -118,17 +118,19 @@ button, #showButton {
 }
 
 #contactForm form {
-    flex-grow: 1; /* Make form take full height */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center form elements inside the box */
-    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 #contactForm form input,
 #contactForm form textarea,
 #contactForm form button {
+    max-width: 90%; 
     width: 100%;
+    margin: 10px auto;
 }
 
 /* ----------------------------- */
