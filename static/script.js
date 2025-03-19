@@ -68,5 +68,12 @@ function validateForm() {
 }
 
 function getAdvice() {
-    fetch(https://api.adviceslip.com/advice)
+    fetch("https://api.adviceslip.com/advice")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("adviceText").innerText = data.slip.advice;
+        })
+        .catch(error => {
+            document.getElementById("adviceText").innerText = "Error fetching advice.";
+        });
 }
