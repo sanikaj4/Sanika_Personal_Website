@@ -138,7 +138,7 @@ form {
 }
 
 form * {
-    display: block;
+    display: flex;
     margin: auto;
     text-align: center;
 }
